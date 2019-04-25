@@ -14,6 +14,17 @@ public class ProductoService {
     
     public List<ProductoEntity> buscarTodos() {
         return (List<ProductoEntity>) this.productoRepository.findAll();
+        
+       // ArryList<ProductoEntity> lista = new ArryList<ProductoEntity>();
+        
     }
+    
+
+    public ProductoEntity  registrar(ProductoEntity producto){
+        return this.productoRepository.save(producto);
+        
+ 
+    }
+
     
 }
